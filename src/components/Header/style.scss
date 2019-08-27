@@ -1,0 +1,39 @@
+@import '../includes.scss';
+
+header {
+	background: $gray;
+	color: $black;
+	grid-area: header;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	padding: 0 30px;
+	font-size: 25px;
+
+	div {
+		display: flex;
+		flex-direction: row;
+	}
+
+	a {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-right: 30px;
+		color: $black;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		svg {
+			display: block;
+		}
+
+		span {
+			margin-left: 20px;
+			font-size: 20px;
+		}
+	}
+}
