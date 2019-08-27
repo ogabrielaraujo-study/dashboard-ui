@@ -9,7 +9,7 @@ export default function Main() {
 	return (
 		<main>
 			<Grid cols="1" rows="1">
-				<h1>Hello World</h1>
+				<Title>Hello World</Title>
 
         <Card>
           <Title>Card with Title</Title>
