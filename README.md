@@ -5,8 +5,8 @@
 - [x] Topbar
 - [x] Icons
 - [x] Tooltip
-- [ ] Card
-- [ ] Heading Tags (Titles)
+- [x] Card
+- [x] Heading Tags (Titles)
 - [ ] Input
 - [ ] Button
 - [ ] Select

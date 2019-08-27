@@ -3,6 +3,7 @@ import './style.scss';
 
 import Grid from '../Grid';
 import Card from '../Card';
+import Title from '../Title';
 
 export default function Main() {
 	return (
@@ -11,7 +12,7 @@ export default function Main() {
 				<h1>Hello World</h1>
 
         <Card>
-          <span>Card</span>
+          <Title>Card with Title</Title>
         </Card>
 			</Grid>
 		</main>
