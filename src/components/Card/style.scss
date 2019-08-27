@@ -1,0 +1,8 @@
+@import '../includes.scss';
+
+.card {
+  box-shadow: 0 0 25px $darkGray;
+  color: $black;
+  padding: 30px;
+  border-radius: 8px;
+}
