@@ -20,6 +20,7 @@
 - [ ] Progress bar
 - [ ] Range
 - [ ] Avatar
+- [ ] Badge
 - [ ] Scroll
 - [ ] Modal
 - [ ] Tabs
@@ -37,3 +38,4 @@
 - [ ] Form Validation / Mask
 - [ ] Steps / Onboarding
 - [ ] Google Maps
+- [ ] Horizontal Template
