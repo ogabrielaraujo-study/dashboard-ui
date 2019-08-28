@@ -2,5 +2,8 @@
 
 main {
 	grid-area: main;
+  background: $gray;
 	padding: 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }

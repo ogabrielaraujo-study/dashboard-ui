@@ -11,6 +11,11 @@
 
 body, input, button {
 	font-family: 'Nunito', sans-serif;
+  color: $black;
+}
+
+body {
+  overflow: hidden;
 }
 
 html, body, #app {

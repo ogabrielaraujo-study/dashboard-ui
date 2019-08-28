@@ -1,4 +1,4 @@
-import styles, { css } from 'styled-components';
+import styles from 'styled-components';
 
 export const Container = styles.div`
 	display: grid;
