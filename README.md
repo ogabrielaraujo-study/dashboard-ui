@@ -7,22 +7,33 @@
 - [x] Tooltip
 - [x] Card
 - [x] Heading Tags (Titles)
-- [ ] Input
+- [ ] Text
+- [ ] Horizontal Rule (hr)
 - [ ] Button
+- [ ] Input
 - [ ] Select
 - [ ] Textarea
 - [ ] Checkbox
 - [ ] Radio
+- [ ] Switch
 - [ ] Upload files
 - [ ] Progress bar
 - [ ] Range
-- [ ] Date Picker
 - [ ] Avatar
 - [ ] Scroll
 - [ ] Modal
 - [ ] Tabs
 - [ ] Dropdown
-- [ ] Alerts
+- [ ] Alerts / Notification
 - [ ] Breadcrumb
 - [ ] Table
 - [ ] Pagination
+- [ ] Timeline
+- [ ] Color Picker
+- [ ] Date Picker
+- [ ] Time Picker
+- [ ] FullCalendar
+- [ ] Charts
+- [ ] Form Validation / Mask
+- [ ] Steps / Onboarding
+- [ ] Google Maps
