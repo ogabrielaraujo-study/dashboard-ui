@@ -40,3 +40,9 @@ a {
 .__react_component_tooltip.show {
 	opacity: 1 !important;
 }
+
+// scrollbar
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #ededed; border-left: 1px solid #e3e3e3; }
+::-webkit-scrollbar-thumb { background: #b0b0b0; border-radius: 30px; }
+::-webkit-scrollbar-thumb:hover { background: #949494; }

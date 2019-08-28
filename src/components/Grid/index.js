@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from './styles';
+import { Div } from './styles';
 
 
 export default class Grid extends React.Component {
@@ -7,7 +7,7 @@ export default class Grid extends React.Component {
 		const children = this.props.children;
 
 		return (
-			<Container className="container" {...this.props}>{children}</Container>
+			<Div className="grid" {...this.props}>{children}</Div>
 		);
 	}
 }

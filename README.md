@@ -40,3 +40,6 @@
 - [ ] Google Maps
 - [ ] Horizontal Template
 - [ ] Fullscreen
+- [ ] Loader/Spinner
+- [ ] Rating (Stars)
+- [ ] Dark Theme
