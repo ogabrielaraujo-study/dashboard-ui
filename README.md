@@ -39,3 +39,4 @@
 - [ ] Steps / Onboarding
 - [ ] Google Maps
 - [ ] Horizontal Template
+- [ ] Fullscreen
