@@ -7,7 +7,8 @@
 - [x] Tooltip
 - [x] Card
 - [x] Heading Tags (Titles)
-- [ ] Text
+- [x] Scroll
+- [x] Text
 - [ ] Horizontal Rule (hr)
 - [ ] Button
 - [ ] Input
@@ -21,7 +22,6 @@
 - [ ] Range
 - [ ] Avatar
 - [ ] Badge
-- [ ] Scroll
 - [ ] Modal
 - [ ] Tabs
 - [ ] Dropdown
