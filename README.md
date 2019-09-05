@@ -9,7 +9,7 @@
 - [x] Heading Tags (Titles)
 - [x] Scroll
 - [x] Text
-- [ ] Horizontal Rule (hr)
+- [x] Horizontal Rule (hr)
 - [ ] Button
 - [ ] Input
 - [ ] Select
