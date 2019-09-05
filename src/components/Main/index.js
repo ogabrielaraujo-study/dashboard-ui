@@ -5,6 +5,7 @@ import Grid from '../Grid';
 import Card from '../Card';
 import Title from '../Title';
 import Text from '../Text';
+import HorizontalRule from '../HorizontalRule';
 
 export default function Main() {
 	return (
@@ -21,6 +22,8 @@ export default function Main() {
             Sed tincidunt tellus arcu, in pellentesque magna aliquet nec. Nunc dapibus cursus mi a cursus.
             Duis vulputate eu lacus a efficitur. Aenean sodales fringilla urna, in interdum sem tincidunt a.
           </Text>
+
+          <HorizontalRule />
 
           <Text>
             Nam hendrerit justo porttitor, semper est et, ullamcorper neque. Aliquam mollis lorem ac orci ultrices varius.
