@@ -10,7 +10,7 @@
 - [x] Scroll
 - [x] Text
 - [x] Horizontal Rule (hr)
-- [ ] Routes
+- [x] Routes
 - [ ] Button
 - [ ] Input
 - [ ] Select
