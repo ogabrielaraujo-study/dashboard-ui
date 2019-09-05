@@ -1,7 +1,19 @@
-// colors
-$primary: #2C50EF;
-$primaryDark: #2445D7;
-$gray: #F4F6FA;
-$darkGray: #efefef;
-$black: #444;
-$white: #fff;
+// COLORS
+$blueColor: #2C50EF;
+$darkBlueColor: #2445D7;
+
+$grayColor: #F4F6FA;
+$darkGrayColor: #efefef;
+
+$blackColor: #444;
+$whiteColor: #fff;
+
+// OPTIONS
+$primary: $blueColor;
+$primaryDark: $darkBlueColor;
+
+$gray: $grayColor;
+$darkGray: $darkGrayColor;
+
+$black: $blackColor;
+$white: $whiteColor;
