@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 
-import { FiAtSign, FiUser, FiBell, FiLogOut } from "react-icons/fi";
+import { FiAtSign, FiUser, FiMoon, FiSun, FiLogOut } from "react-icons/fi";
 
 export default function Menu() {
 	return (
@@ -11,7 +11,7 @@ export default function Menu() {
 			</div>
 
 			<div className="right">
-				<a href="/"><FiBell /></a>
+				<a href="/"><FiMoon /></a>
 				<a href="/"><FiUser /></a>
 				<a href="/"><FiLogOut /></a>
 			</div>
