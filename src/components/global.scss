@@ -32,7 +32,7 @@ html, body, #app {
 	"menu main";
 }
 
-a {
+a, a:hover {
 	color: $black;
 	text-decoration: none;
 }
