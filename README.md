@@ -11,7 +11,7 @@
 - [x] Vertical Template
 - [ ] Horizontal Template
 - [ ] Page Transitions
-- [ ] Fullscreen
+- [x] Fullscreen
 - [ ] Alerts / Notification
 - [ ] Switch
 - [ ] Avatar
