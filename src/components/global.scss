@@ -3,15 +3,17 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
-body, input, button {
-	font-family: 'Nunito', sans-serif;
+body,
+input,
+button {
+  font-family: 'Nunito', sans-serif;
   color: $black;
 }
 
@@ -19,31 +21,47 @@ body {
   overflow: hidden;
 }
 
-html, body, #app {
-	height: 100%;
+html,
+body,
+#app {
+  height: 100%;
 }
 
 #app {
-	display: grid;
-	grid-template-columns: 70px 1fr;
-	grid-template-rows: 60px 1fr;
-	grid-template-areas:
-	"menu header"
-	"menu main";
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+    'menu header'
+    'menu main';
 }
 
-a, a:hover {
-	color: $black;
-	text-decoration: none;
+a,
+a:hover {
+  color: $black;
+  text-decoration: none;
 }
 
 // tooltip
 .__react_component_tooltip.show {
-	opacity: 1 !important;
+  opacity: 1 !important;
 }
 
 // scrollbar
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background: #ededed; border-left: 1px solid #e3e3e3; }
-::-webkit-scrollbar-thumb { background: #b0b0b0; border-radius: 30px; }
-::-webkit-scrollbar-thumb:hover { background: #949494; }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ededed;
+  border-left: 1px solid #e3e3e3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b0b0b0;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #949494;
+}

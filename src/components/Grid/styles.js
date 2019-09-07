@@ -1,9 +1,9 @@
-import styles from 'styled-components';
+import styles from 'styled-components'
 
 export const Div = styles.div`
 	display: grid;
 	grid-template-columns: repeat(${props => props.cols}, 1fr);
 	grid-template-rows: repeat(${props => props.rows}, 1fr);
-	grid-gap: ${props => (props.gap) ? props.gap + 'px' : '30px'};
+	grid-gap: ${props => (props.gap ? props.gap + 'px' : '30px')};
   margin-bottom: 30px;
-`;
+`

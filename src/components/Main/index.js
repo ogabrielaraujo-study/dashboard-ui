@@ -1,8 +1,6 @@
-import React from 'react';
-import './style.scss';
+import React from 'react'
+import './style.scss'
 
 export default function Main({ children }) {
-	return (
-		<main>{ children }</main>
-	);
+  return <main>{children}</main>
 }

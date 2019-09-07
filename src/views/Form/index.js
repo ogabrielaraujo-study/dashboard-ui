@@ -1,15 +1,14 @@
-import React from 'react';
-//import './style.scss';
+import React from 'react'
 
-import Grid from '../../components/Grid';
-import Card from '../../components/Card';
+import Grid from '../../components/Grid'
+import Card from '../../components/Card'
 
 export default function Form() {
-	return (
+  return (
     <>
-			<Grid cols="1" rows="1">
+      <Grid cols="1" rows="1">
         <Card>teste</Card>
-			</Grid>
-		</>
-	);
+      </Grid>
+    </>
+  )
 }

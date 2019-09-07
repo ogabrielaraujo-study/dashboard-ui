@@ -1,13 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 // global style
-import './components/global.scss';
+import './components/global.scss'
 
 // routes
-import Routes from './routes';
+import Routes from './routes'
 
 export default function App() {
-	return (
-		<Routes />
-	);
+  return <Routes />
 }
