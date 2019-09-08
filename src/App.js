@@ -1,7 +1,7 @@
 import React from 'react'
 
 // global style
-import './components/global.scss'
+import './styles/global.scss'
 
 // routes
 import Routes from './routes'

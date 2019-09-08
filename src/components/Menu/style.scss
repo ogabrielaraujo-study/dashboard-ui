@@ -1,31 +1,62 @@
-@import '../includes.scss';
+@import '../../styles/includes.scss';
 
 nav {
-	grid-area: menu;
-	background: $primary;
-	width: 100%;
-	max-width: 80px;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
+  grid-area: menu;
+  background: $primary;
+  width: 70px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
-  padding: 15px 0;
+  padding: $halfGutter 0;
   overflow-x: hidden;
   overflow-y: auto;
+  transition: width 0.5s;
 
-	a {
-		color: $white;
-		text-decoration: none;
-		font-size: 22px;
-		margin-bottom: 20px;
-		line-height: 14px;
-		padding: 10px;
-		border-radius: 12px;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: $white;
+    text-decoration: none;
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 14px;
+    padding: 10px;
+    border-radius: 12px;
 
-		&:hover {
-			background: $primaryDark;
+    &:hover {
+      background: $primaryDark;
       color: $white;
-		}
-	}
+    }
+  }
+
+  span {
+    display: none;
+  }
+
+  svg {
+    width: 22px;
+  }
+
+  &.expand {
+    width: 200px;
+    transition: width 0.5s;
+
+    a {
+      width: calc(100% - #{$gutter});
+    }
+
+    span {
+      display: block;
+      font-size: 16px;
+      margin-left: 10px;
+      transition: width 0.3s;
+    }
+
+    .__react_component_tooltip {
+      display: none !important;
+    }
+  }
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Div } from './styles'
 
-export default function Grid({ children, cols, rows }) {
+export default function Grid({ children, className, cols, rows }) {
   return (
-    <Div className="grid" cols={cols} rows={rows}>
+    <Div className={`grid ${className}`} cols={cols} rows={rows}>
       {children}
     </Div>
   )

@@ -1,16 +1,15 @@
 import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 
-// Main
-import Main from './components/Main'
-
 // Base components
 import Menu from './components/Menu'
 import Header from './components/Header'
+import Main from './components/Main'
 
 // Pages/Views
 import Welcome from './views/Welcome'
 import Form from './views/Form'
+import Table from './views/Table'
 
 export default function Routes({ children }) {
   return (
@@ -21,7 +20,21 @@ export default function Routes({ children }) {
       <Main>
         <Route path="/" exact component={Welcome} />
         <Route path="/form" component={Form} />
+        <Route path="/table" component={Table} />
+        <Route path="/logout" component={Welcome} />
+        <Route component={Error404} />
       </Main>
     </BrowserRouter>
+  )
+}
+
+function Error404({ location }) {
+  return (
+    <div>
+      <h1>Erro 404</h1>
+      <p>
+        Página não encontrada <code>{location.pathname}</code>
+      </p>
+    </div>
   )
 }

@@ -1,6 +1,8 @@
 @import './includes.scss';
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap');
 @import '~bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-custom.scss';
+@import './helpers.scss';
 
 * {
   margin: 0;
@@ -29,8 +31,8 @@ body,
 
 #app {
   display: grid;
-  grid-template-columns: 70px 1fr;
-  grid-template-rows: 60px 1fr;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
   grid-template-areas:
     'menu header'
     'menu main';

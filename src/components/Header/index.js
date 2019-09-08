@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import './style.scss'
 
+import { Image, Dropdown } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import {
   FiAtSign,
   FiUser,
   FiMoon,
-  FiSun,
   FiMaximize,
   FiMinimize,
   FiLogOut,
@@ -33,7 +34,7 @@ export default function Menu() {
       <div className="left">
         <a href="/">
           <FiAtSign />
-          <span>Logo</span>
+          <span>Dashboard</span>
         </a>
       </div>
 
@@ -41,15 +42,35 @@ export default function Menu() {
         <a href="/">
           <FiMoon />
         </a>
+
         <a href="/" onClick={handleFullscreen}>
           {fullscreen ? <FiMinimize /> : <FiMaximize />}
         </a>
-        <a href="/">
-          <FiUser />
-        </a>
-        <a href="/">
-          <FiLogOut />
-        </a>
+
+        <Dropdown alignRight>
+          <Dropdown.Toggle
+            variant="primary"
+            size="sm"
+            id="dropdown-basic"
+            className="account"
+          >
+            <Image src="https://i.imgur.com/0TwtGPN.png" roundedCircle />
+            <span>Username</span>
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item>
+              <Link to="/">
+                <FiUser />
+                Perfil
+              </Link>
+            </Dropdown.Item>
+            <Dropdown.Item href="/logout">
+              <FiLogOut />
+              Sair
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </div>
     </header>
   )

@@ -1,4 +1,4 @@
-@import '../includes.scss';
+@import '../../styles/includes.scss';
 
 header {
   background: $white;
@@ -10,6 +10,7 @@ header {
   flex-direction: row;
   padding: 0 30px;
   font-size: 25px;
+  height: 60px;
 
   div {
     display: flex;
@@ -33,6 +34,22 @@ header {
 
     span {
       margin-left: 20px;
+      font-size: 20px;
+    }
+  }
+
+  .account {
+    img {
+      width: 28px;
+      background-color: #f8f8f8;
+      margin-right: 10px;
+      padding: 5px;
+    }
+
+    & + div svg {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
       font-size: 20px;
     }
   }
