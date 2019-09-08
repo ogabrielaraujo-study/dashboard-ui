@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 // Base components
 import Menu from './components/Menu'
@@ -18,11 +18,13 @@ export default function Routes({ children }) {
       <Header />
 
       <Main>
-        <Route path="/" exact component={Welcome} />
-        <Route path="/form" component={Form} />
-        <Route path="/table" component={Table} />
-        <Route path="/logout" component={Welcome} />
-        <Route component={Error404} />
+        <Switch>
+          <Route path="/" exact component={Welcome} />
+          <Route path="/form" component={Form} />
+          <Route path="/table" component={Table} />
+          <Route path="/logout" component={Welcome} />
+          <Route component={Error404} />
+        </Switch>
       </Main>
     </BrowserRouter>
   )
