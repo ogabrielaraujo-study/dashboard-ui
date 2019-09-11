@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './style.scss'
 
-import { Image, Dropdown } from 'react-bootstrap'
+import { Dropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import {
   FiAtSign,
@@ -32,16 +32,16 @@ export default function Menu() {
   return (
     <header>
       <div className="left">
-        <a href="/">
+        <Link to="/">
           <FiAtSign />
           <span>Dashboard</span>
-        </a>
+        </Link>
       </div>
 
       <div className="right">
-        <a href="/">
+        <Link to="/">
           <FiMoon />
-        </a>
+        </Link>
 
         <a href="/" onClick={handleFullscreen}>
           {fullscreen ? <FiMinimize /> : <FiMaximize />}
@@ -53,21 +53,24 @@ export default function Menu() {
             size="sm"
             id="dropdown-basic"
             className="account"
+            as="div"
           >
-            <Image src="https://i.imgur.com/0TwtGPN.png" roundedCircle />
-            <span>Username</span>
+            <FiUser />
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
+            <Dropdown.Header>Username</Dropdown.Header>
             <Dropdown.Item>
               <Link to="/">
                 <FiUser />
                 Perfil
               </Link>
             </Dropdown.Item>
-            <Dropdown.Item href="/logout">
-              <FiLogOut />
-              Sair
+            <Dropdown.Item>
+              <Link to="/logout">
+                <FiLogOut />
+                Sair
+              </Link>
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>

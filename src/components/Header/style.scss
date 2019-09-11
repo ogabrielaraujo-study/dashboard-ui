@@ -1,6 +1,6 @@
 @import '../../styles/includes.scss';
 
-header {
+#app > header {
   background: $white;
   color: $black;
   grid-area: header;
@@ -39,11 +39,12 @@ header {
   }
 
   .account {
-    img {
-      width: 28px;
-      background-color: #f8f8f8;
-      margin-right: 10px;
-      padding: 5px;
+    svg {
+      cursor: pointer;
+    }
+
+    &:after {
+      display: none;
     }
 
     & + div svg {
@@ -51,6 +52,14 @@ header {
       vertical-align: middle;
       margin-right: 10px;
       font-size: 20px;
+    }
+  }
+
+  .dropdown-menu-right {
+    margin-top: 5px;
+
+    a:active {
+      color: $white;
     }
   }
 }

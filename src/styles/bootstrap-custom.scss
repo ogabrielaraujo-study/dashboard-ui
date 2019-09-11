@@ -31,16 +31,14 @@ h3 {
 
 // Card
 .card {
-  box-shadow: 0 3px 5px $darkGray;
+  box-shadow: 0 3px 3px $darkGray;
   color: $black;
   background: $white;
-  border-radius: $radius;
 }
 
 // Table
 .table {
   margin-bottom: 0;
-  border-radius: $radius;
   border: 0;
   color: $black;
 
@@ -52,4 +50,14 @@ h3 {
     color: $black;
     background-color: $darkGray;
   }
+}
+
+// Checkbox
+.custom-checkbox label {
+  cursor: pointer;
+}
+
+// Radio
+.custom-radio label {
+  cursor: pointer;
 }
