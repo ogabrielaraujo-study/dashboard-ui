@@ -10,6 +10,7 @@ import Main from './components/Main'
 import Welcome from './views/Welcome'
 import Form from './views/Form'
 import Table from './views/Table'
+import Material from './views/Material'
 
 export default function Routes({ children }) {
   return (
@@ -23,6 +24,7 @@ export default function Routes({ children }) {
           <Route path="/form" component={Form} />
           <Route path="/table" component={Table} />
           <Route path="/logout" component={Welcome} />
+          <Route path="/material" component={Material} />
           <Route component={Error404} />
         </Switch>
       </Main>
