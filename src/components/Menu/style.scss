@@ -1,6 +1,6 @@
 @import '../../styles/includes.scss';
 
-nav {
+#app > nav {
   grid-area: menu;
   background: $primary;
   width: 70px;

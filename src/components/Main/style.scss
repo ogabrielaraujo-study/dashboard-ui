@@ -1,6 +1,6 @@
 @import '../../styles/includes.scss';
 
-main {
+#app > main {
   grid-area: main;
   background: $gray;
   padding: $gutter;
