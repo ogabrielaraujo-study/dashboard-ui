@@ -1,9 +1,0 @@
-@import '../../styles/includes.scss';
-
-#app > main {
-  grid-area: main;
-  background: $gray;
-  padding: $gutter;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}

@@ -1,8 +1,8 @@
 @import './includes.scss';
 @import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap');
-@import '~bootstrap/scss/bootstrap.scss';
-@import 'bootstrap-custom.scss';
-@import './helpers.scss';
+//@import '~bootstrap/scss/bootstrap.scss';
+//@import 'bootstrap-custom.scss';
+//@import './helpers.scss';
 
 * {
   margin: 0;
@@ -16,7 +16,6 @@ body,
 input,
 button {
   font-family: 'Nunito', sans-serif;
-  color: $black;
 }
 
 body {
@@ -28,21 +27,6 @@ html,
 body,
 #app {
   height: 100%;
-}
-
-#app {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto 1fr;
-  grid-template-areas:
-    'menu header'
-    'menu main';
-}
-
-a,
-a:hover {
-  color: $black;
-  text-decoration: none;
 }
 
 // tooltip
