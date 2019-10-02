@@ -1,36 +1,21 @@
 import React, { useState } from 'react'
 import './style.scss'
 
-import { FiUser, FiLayout, FiFileText, FiList } from 'react-icons/fi'
+import { FiMenu, FiLayout, FiFileText, FiList } from 'react-icons/fi'
 import ReactTooltip from 'react-tooltip'
 import { Link } from 'react-router-dom'
 
-import {
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Divider,
-} from '@material-ui/core'
-
 export default function Menu() {
+  const [menu, setMenu] = useState(false)
+
+  function toggleMenu(e) {
+    e.preventDefault()
+
+    setMenu(!menu)
+  }
+
   return (
-    <>
-      <Link to="/form" data-tip="Form">
-        <List>
-          <ListItem button>
-            <ListItemIcon>
-              <FiUser size={23} />
-            </ListItemIcon>
-            <ListItemText primary="Teste" />
-          </ListItem>
-        </List>
-      </Link>
-    </>
-  )
-}
-{
-  /* <nav className={!menu ? 'default' : 'expand'}>
+    <nav className={!menu ? 'default' : 'expand'}>
       <ReactTooltip effect="solid" place="right" />
       <a href="/" onClick={toggleMenu} data-tip="Menu">
         <FiMenu />
@@ -48,5 +33,6 @@ export default function Menu() {
         <FiList />
         <span>Table</span>
       </Link>
-    </nav> */
+    </nav>
+  )
 }

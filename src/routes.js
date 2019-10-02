@@ -1,6 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
+// Base components
+import Menu from './components/Menu'
+import Header from './components/Header'
+import Main from './components/Main'
+
 // Pages/Views
 import Welcome from './views/Welcome'
 import Form from './views/Form'
@@ -10,14 +15,19 @@ import Material from './views/Material'
 export default function Routes({ children }) {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={Welcome} />
-        <Route path="/form" component={Form} />
-        <Route path="/table" component={Table} />
-        <Route path="/logout" component={Welcome} />
-        <Route path="/material" component={Material} />
-        <Route component={Error404} />
-      </Switch>
+      <Menu />
+      <Header />
+
+      <Main>
+        <Switch>
+          <Route path="/" exact component={Welcome} />
+          <Route path="/form" component={Form} />
+          <Route path="/table" component={Table} />
+          <Route path="/logout" component={Welcome} />
+          <Route path="/material" component={Material} />
+          <Route component={Error404} />
+        </Switch>
+      </Main>
     </BrowserRouter>
   )
 }

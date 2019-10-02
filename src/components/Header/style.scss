@@ -1,0 +1,65 @@
+@import '../../styles/includes.scss';
+
+#app > header {
+  background: $white;
+  color: $black;
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0 30px;
+  font-size: 25px;
+  height: 60px;
+
+  div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+    color: $black;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    svg {
+      display: block;
+    }
+
+    span {
+      margin-left: 20px;
+      font-size: 20px;
+    }
+  }
+
+  .account {
+    svg {
+      cursor: pointer;
+    }
+
+    &:after {
+      display: none;
+    }
+
+    & + div svg {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      font-size: 20px;
+    }
+  }
+
+  .dropdown-menu-right {
+    margin-top: 5px;
+
+    a:active {
+      color: $white;
+    }
+  }
+}
