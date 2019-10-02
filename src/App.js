@@ -1,15 +1,11 @@
 import React from 'react'
 
-// template
-import Template from './template'
+// global style
+import './styles/global.scss'
 
 // routes
 import Routes from './routes'
 
 export default function App() {
-  return (
-    <Template>
-      <Routes />
-    </Template>
-  )
+  return <Routes />
 }

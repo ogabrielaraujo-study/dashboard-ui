@@ -12,13 +12,6 @@ import {
   Spinner,
 } from 'react-bootstrap'
 
-import {
-  TextField,
-  Card as CardMaterial,
-  CardContent,
-  Typography,
-} from '@material-ui/core'
-
 export default function Forms() {
   function handleSubmit(e) {
     e.preventDefault()
@@ -125,15 +118,6 @@ export default function Forms() {
             </Form>
           </Card.Body>
         </Card>
-
-        <CardMaterial>
-          <CardContent>
-            <Typography variant="h5" component="h2">
-              Word of the Day
-            </Typography>
-            <TextField id="standard-name" label="Name" margin="normal" />
-          </CardContent>
-        </CardMaterial>
       </Grid>
     </>
   )
